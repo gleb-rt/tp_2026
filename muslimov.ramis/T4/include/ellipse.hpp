@@ -4,7 +4,7 @@
 #include "point.hpp"
 #include <string>
 
-class Ellipse : public Shape 
+class Ellipse : public Shape
 {
 public:
     Ellipse (const Point& center, double verticalRadius, double horizontalRadius);

@@ -7,7 +7,7 @@
 #include <memory>
 #include <string>
 
-class CompositeShape : public Shape 
+class CompositeShape : public Shape
 {
 public:
     CompositeShape() = default;

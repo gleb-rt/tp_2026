@@ -17,7 +17,7 @@ std::size_t CompositeShape::size() const noexcept
     return shapes_.size();
 }
 
-double CompositeShape::getArea() const 
+double CompositeShape::getArea() const
 {
     if(shapes_.empty()){
         return 0.0;
@@ -51,7 +51,7 @@ void CompositeShape::getBoundingBox(double &left, double &bottom, double &right,
 
     }
 }
-Point CompositeShape::getCenter() const 
+Point CompositeShape::getCenter() const
 {
     if(shapes_.empty()){
         throw std::runtime_error("CompositeShape::getCenter: composite is empty");
@@ -61,7 +61,7 @@ Point CompositeShape::getCenter() const
     return Point { (l + r)/2.0, (b + t)/2.0 };
 }
 
-void CompositeShape::move(double dx, double dy) 
+void CompositeShape::move(double dx, double dy)
 {
     for(auto &s : shapes_){
         s->move(dx, dy);
