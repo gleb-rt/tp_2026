@@ -1,5 +1,0 @@
-if(EXISTS "/home/ramis/Рабочий стол/tech_prog_github/tp_2026/muslimov.ramis/T4/build/unit_tests[1]_tests.cmake")
-  include("/home/ramis/Рабочий стол/tech_prog_github/tp_2026/muslimov.ramis/T4/build/unit_tests[1]_tests.cmake")
-else()
-  add_test(unit_tests_NOT_BUILT unit_tests_NOT_BUILT)
-endif()

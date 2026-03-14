@@ -52,9 +52,5 @@ int main(int argc, char **argv) {
         std::cerr << "Demo printing failed: " << e.what() << "\n";
     }
 
-
-    // int* p = new int(42);
-    // (void)p;
-
     return testResult;
 }

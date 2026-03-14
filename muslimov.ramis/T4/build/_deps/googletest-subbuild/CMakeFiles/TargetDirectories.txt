@@ -1,3 +1,0 @@
-/home/ramis/Рабочий стол/tech_prog_github/tp_2026/muslimov.ramis/T4/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
-/home/ramis/Рабочий стол/tech_prog_github/tp_2026/muslimov.ramis/T4/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
-/home/ramis/Рабочий стол/tech_prog_github/tp_2026/muslimov.ramis/T4/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
