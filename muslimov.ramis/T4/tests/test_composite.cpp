@@ -7,8 +7,10 @@
 
 // TEST(CompositeTest, AddAndAreaAndCenter) {
 //     CompositeShape comp;
-//     comp.add(std::make_unique<Rectangle>(Point{0,0}, Point{2,1})); // area 2
-//     comp.add(std::make_unique<Ellipse>(Point{4,0}, 1.0, 0.5));     // area ~ PI*1*0.5
+//     comp.add(std::make_unique<Rectangle>(Point{0,0}, Point{2,1}));
+// area 2
+//     comp.add(std::make_unique<Ellipse>(Point{4,0}, 1.0, 0.5));
+// area ~ PI*1*0.5
 
 //     double expectedArea = 2.0 + 3.14159265358979323846 * 1.0 * 0.5;
 //     EXPECT_NEAR(comp.getArea(), expectedArea, 1e-6);
@@ -22,7 +24,8 @@
 
 // TEST(CompositeTest, ScaleMovesChildrenAndScalesThem) {
 //     CompositeShape comp;
-//     comp.add(std::make_unique<Rectangle>(Point{10.0,10.0}, Point{12.0,11.0}));
+//     comp.add(std::make_unique<Rectangle>(Point{10.0,10.0},
+//Point{12.0,11.0}));
 //     comp.add(std::make_unique<Ellipse>(Point{13.0,10.5}, 0.8, 0.6));
 
 //     Point beforeCenter = comp.getCenter();
@@ -39,7 +42,8 @@
 
 //     // areas multiplied by 4
 //     for (std::size_t i = 0; i < children.size(); ++i) {
-//         EXPECT_NEAR(children[i]->getArea(), areas[i] * 4.0, 1e-6);
+//         EXPECT_NEAR(children[i]->getArea(),
+//areas[i] * 4.0, 1e-6);
 //     }
 
 //     // centers moved away from composite center by factor 2
@@ -58,7 +62,8 @@
 
 // TEST(CompositeTest, PreventSelfAdd) {
 //     CompositeShape comp;
-//     // Если функция add проверяет наличие собственного значения, то добавление прямого указателя на себя должно вызвать исключение.
+//     // Если функция add проверяет наличие собственного значения,
+//то добавление прямого указателя на себя должно вызвать исключение.
 //     std::unique_ptr<Shape> p = std::make_unique<CompositeShape>();
 //     EXPECT_NO_THROW(comp.add(std::move(p))); // depends on your policy
 // }
