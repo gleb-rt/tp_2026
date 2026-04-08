@@ -1,26 +1,26 @@
-#ifndef RECTANGLE_H
-#define RECTANGLE_H
+#ifndef CIRCLE_H
+#define CIRCLE_H
 #include "point.h"
 #include "shape.h"
 
 
-class Rectangle: public Shape
+class Circle: public Shape
 {
 public:
   // Constructor
-  Rectangle(Point lowerLeft, Point upperRight);
+  Circle(Point center, double radius);
 
   double getArea() const override;
   Point getCenter() const override;
   void move(double dx, double dy) override;
   void scale(double koef) override;
   std::string getName() const override;
-  virtual void print() const override;
+  void print() const override;
 
 
 private:
-  Point leftBottom_;
-  Point rightTop_;
+  Point center_;
+  double radius_;
 };
 
 

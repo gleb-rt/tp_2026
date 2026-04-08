@@ -4,7 +4,6 @@
 #include "shape.h"
 
 
-
 class Square: public Shape
 {
 public:
@@ -16,8 +15,7 @@ public:
   void move(double dx, double dy) override;
   void scale(double koef) override;
   std::string getName() const override;
-
-
+  virtual void print() const override;
 
 
 private:

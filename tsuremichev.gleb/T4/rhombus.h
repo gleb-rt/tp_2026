@@ -1,14 +1,14 @@
-#ifndef RECTANGLE_H
-#define RECTANGLE_H
+#ifndef RHOMBUS_H
+#define RHOMBUS_H
 #include "point.h"
 #include "shape.h"
 
 
-class Rectangle: public Shape
+class Rhombus: public Shape
 {
 public:
   // Constructor
-  Rectangle(Point lowerLeft, Point upperRight);
+  Rhombus(Point center, double vertDiagonal, double horizDiagonal);
 
   double getArea() const override;
   Point getCenter() const override;
@@ -17,10 +17,10 @@ public:
   std::string getName() const override;
   virtual void print() const override;
 
-
 private:
-  Point leftBottom_;
-  Point rightTop_;
+  Point center_;
+  double vertDiagonal_;
+  double horizDiagonal_;
 };
 
 

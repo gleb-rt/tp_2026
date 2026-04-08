@@ -1,26 +1,28 @@
-#ifndef RECTANGLE_H
-#define RECTANGLE_H
+#ifndef IOSCELES_TRAPEZOID_H
+#define IOSCELES_TRAPEZOID_H
 #include "point.h"
 #include "shape.h"
 
 
-class Rectangle: public Shape
+class IsoscelesTrapezoid: public Shape
 {
 public:
   // Constructor
-  Rectangle(Point lowerLeft, Point upperRight);
+  IsoscelesTrapezoid(Point leftBottom, double lowBase, double topBase, double height);
 
   double getArea() const override;
   Point getCenter() const override;
   void move(double dx, double dy) override;
   void scale(double koef) override;
   std::string getName() const override;
-  virtual void print() const override;
+  void print() const override;
 
 
 private:
   Point leftBottom_;
-  Point rightTop_;
+  double lowBase_;
+  double topBase_;
+  double height_;
 };
 
 

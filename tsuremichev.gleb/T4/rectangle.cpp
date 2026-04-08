@@ -1,5 +1,5 @@
 #include "rectangle.h"
-
+#include <iostream>
 
 Rectangle::Rectangle(Point lowerLeft, Point upperRight)
 : leftBottom_(lowerLeft), rightTop_ (upperRight) {}
@@ -9,7 +9,6 @@ double Rectangle::getArea() const
   double height = (rightTop_.y_ - leftBottom_.y_);
   double width = (rightTop_.x_ - leftBottom_.x_);
   return (height * width);
-
 }
 
 Point Rectangle::getCenter() const
@@ -47,4 +46,11 @@ void Rectangle::scale(double koef)
 std::string Rectangle::getName() const
 {
   return "RECTANGLE";
+}
+
+void Rectangle::print() const
+{
+  Point center = getCenter();
+  double area = getArea();
+  std::cout << "[" << getName()  << ", ("  << center.x_   << ", "  << center.y_  << "), "  << area  << "]\n";
 }

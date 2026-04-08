@@ -11,6 +11,7 @@ public:
   virtual void move(double dx, double dy) = 0;
   virtual void scale(double koef) = 0;
   virtual std::string getName() const = 0;
+  virtual void print() const = 0;
 };
 
 

@@ -1,14 +1,14 @@
-#ifndef RECTANGLE_H
-#define RECTANGLE_H
+#ifndef RING_H
+#define RING_H
 #include "point.h"
 #include "shape.h"
 
 
-class Rectangle: public Shape
+class Ring: public Shape
 {
 public:
   // Constructor
-  Rectangle(Point lowerLeft, Point upperRight);
+  Ring(Point center, double bigRadius, double smallRadius);
 
   double getArea() const override;
   Point getCenter() const override;
@@ -17,10 +17,10 @@ public:
   std::string getName() const override;
   virtual void print() const override;
 
-
 private:
-  Point leftBottom_;
-  Point rightTop_;
+  Point center_;
+  double bigRadius_;
+  double smallRadius_;
 };
 
 
