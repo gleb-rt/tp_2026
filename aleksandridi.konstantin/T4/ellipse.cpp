@@ -1,4 +1,4 @@
-#include "ellipse.h"
+#include "ellipse.hpp"
 #include <cmath>
 
 double Ellipse::getArea() const {

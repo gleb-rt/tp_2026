@@ -1,7 +1,7 @@
 #include <iostream>
-#include "rectangle.h"
-#include "ellipse.h"
-#include "composite_shape.h"
+#include "rectangle.hpp"
+#include "ellipse.hpp"
+#include "composite_shape.hpp"
 #include <vector>
 #include <memory>
 #include <iomanip>

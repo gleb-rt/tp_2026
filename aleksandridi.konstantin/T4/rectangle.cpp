@@ -1,4 +1,4 @@
-#include "rectangle.h"
+#include "rectangle.hpp"
 
 double Rectangle::getArea() const {
     return (right_top_.x_ - left_bottom_.x_) * (right_top_.y_ - left_bottom_.y_);

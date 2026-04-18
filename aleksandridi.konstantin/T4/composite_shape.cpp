@@ -1,4 +1,4 @@
-#include "composite_shape.h"
+#include "composite_shape.hpp"
 
 double CompositeShape::getArea() const {
     double area = 0;
