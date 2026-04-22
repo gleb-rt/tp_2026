@@ -12,7 +12,9 @@ double CompositeShape::getArea() const
 
 Point CompositeShape::getCenter() const
 {
-
+    Point extremeLeftLower = getLeftLower();
+    Point extremeRightUpper = getRightUpper();
+    return {((extremeRightUpper.x + extremeLeftLower.x) / 2), ((extremeRightUpper.y + extremeLeftLower.y) / 2)};
 }
 
 void CompositeShape::move(double dx, double dy)
